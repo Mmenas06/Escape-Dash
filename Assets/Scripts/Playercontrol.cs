@@ -1,5 +1,5 @@
 using UnityEngine;
-//Manuel Mena 2025
+//Manuel Mena
 public class Playercontrol : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
