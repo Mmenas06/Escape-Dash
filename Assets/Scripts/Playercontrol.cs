@@ -9,15 +9,17 @@ public class Playercontrol : MonoBehaviour
     private Rigidbody2D rb2d;
 
     private float move;
-    public float jumpForce = 4;
+    public float jumpForce = 5;
     private bool isGrounded;
     public Transform groundCheck;
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
+    private Animator animator;
     
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,8 @@ public class Playercontrol : MonoBehaviour
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpForce);
         }
+        
+        animator.SetFloat("Speed", Mathf.Abs(move));
     }
 
     private void FixedUpdate()
