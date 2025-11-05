@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
+
 //Manuel Mena
 public class Playercontrol : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is 
-    
+
     public float speed = 5;
     private Rigidbody2D rb2d;
 
@@ -15,7 +16,7 @@ public class Playercontrol : MonoBehaviour
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
     private Animator animator;
-    
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -30,19 +31,21 @@ public class Playercontrol : MonoBehaviour
 
         if (move != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(move),1,1);
+            transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpForce);
         }
-        
-        animator.SetFloat("Speed", Mathf.Abs(move));
+
+        animator.SetBool("isMoving", move > 0.1 || move < -0.1);
+        animator.SetFloat("VerticalVelocity" , rb2d.linearVelocity.y);
+        animator.SetBool("isGrounded", isGrounded);
     }
 
     private void FixedUpdate()
     {
-        isGrounded =  Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
     }
 }

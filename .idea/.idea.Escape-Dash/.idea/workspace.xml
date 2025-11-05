@@ -7,7 +7,10 @@
     <list default="true" id="3ce2768b-abb2-486b-b403-0d31168b99ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Fantasy Platformer Pack/Main_Character/Boy/Eco/Idle/Armature_idle_0 (1).controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Fantasy Platformer Pack/Main_Character/Boy/Eco/Idle/Armature_idle_0 (1).controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Fantasy Platformer Pack/Main_Character/Boy/Eco/Run/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Fantasy Platformer Pack/Main_Character/Boy/Eco/Run/Run.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +113,7 @@
       <workItem from="1761119861094" duration="670000" />
       <workItem from="1761723942351" duration="2866000" />
       <workItem from="1762162133682" duration="3913000" />
+      <workItem from="1762328659429" duration="3356000" />
     </task>
     <servers />
   </component>

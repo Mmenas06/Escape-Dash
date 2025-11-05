@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 61448572}
   - component: {fileID: 61448571}
   - component: {fileID: 61448570}
+  - component: {fileID: 61448574}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -250,12 +251,30 @@ Transform:
   m_GameObject: {fileID: 61448569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 1.5, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61448574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61448569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1973bd82fe6b44686af6bd1e68bb4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  target: {fileID: 101858791}
+--- !u!4 &101858791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3921511414706753628, guid: 84448d0536302784c8d70a5a8003817f, type: 3}
+  m_PrefabInstance: {fileID: 1537990881605544370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &109609377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1119,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4168728101208810667, guid: 84448d0536302784c8d70a5a8003817f, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168728101208810667, guid: 84448d0536302784c8d70a5a8003817f, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4812353334611901256, guid: 84448d0536302784c8d70a5a8003817f, type: 3}
       propertyPath: m_Name
       value: Armature_idle_0
@@ -1108,6 +1135,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: cffbc6a195f66b44198e03892cfa36c4, type: 2}
+    - target: {fileID: 6029397352697609323, guid: 84448d0536302784c8d70a5a8003817f, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
