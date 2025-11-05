@@ -47,7 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Playercontrol.cs" />
+    <Compile Include="Assets\2D Dungeon Tilemap\CoinSystem\Scripts\Coin.cs" />
+    <Compile Include="Assets\2D Dungeon Tilemap\CoinSystem\Scripts\CoinDisplay.cs" />
+    <Compile Include="Assets\2D Dungeon Tilemap\SceneScripts\CameraFollow2D.cs" />
+    <Compile Include="Assets\2D Dungeon Tilemap\CoinSystem\Scripts\CollectedCoin.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\2D Dungeon Tilemap\SceneScripts\PlayerMovement.cs" />
+    <None Include="Assets\2D Dungeon Tilemap\Documentation\Third-Party Notices.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.2.6f2\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
