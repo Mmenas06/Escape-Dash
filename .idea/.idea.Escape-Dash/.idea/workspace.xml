@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce2768b-abb2-486b-b403-0d31168b99ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +119,7 @@
       <workItem from="1762328659429" duration="3356000" />
       <workItem from="1762335549210" duration="865000" />
       <workItem from="1762771022513" duration="625000" />
+      <workItem from="1762933212691" duration="4877000" />
     </task>
     <servers />
   </component>
