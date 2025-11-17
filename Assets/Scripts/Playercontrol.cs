@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,8 @@ public class Playercontrol : MonoBehaviour
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
     private Animator animator;
+    private int coins;
+    public TMP_Text textCoins;
 
     void Start()
     {
@@ -41,7 +44,7 @@ public class Playercontrol : MonoBehaviour
         }
 
         animator.SetBool("isMoving", move > 0.1 || move < -0.1);
-        animator.SetFloat("VerticalVelocity" , rb2d.linearVelocity.y);
+        animator.SetFloat("VerticalVelocity", rb2d.linearVelocity.y);
         animator.SetBool("isGrounded", isGrounded);
     }
 
@@ -52,10 +55,16 @@ public class Playercontrol : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.transform.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+            coins++;
+            textCoins.text = coins.ToString();
+        }
+
         if (collision.gameObject.CompareTag("Spikes"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-    
 }
