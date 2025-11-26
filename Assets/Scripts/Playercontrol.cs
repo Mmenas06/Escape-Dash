@@ -14,6 +14,7 @@ public class Playercontrol : MonoBehaviour
     private float move;
     public float jumpForce = 5;
     private bool isGrounded;
+    private int jumpCounter;
     public Transform groundCheck;
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
@@ -25,6 +26,7 @@ public class Playercontrol : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        jumpCounter = 0;
     }
 
     // Update is called once per frame
@@ -38,10 +40,13 @@ public class Playercontrol : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && (isGrounded || jumpCounter < 1)) //Salto
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpForce);
+            jumpCounter++;
         }
+        
+        if (isGrounded) jumpCounter = 0;
 
         animator.SetBool("isMoving", move > 0.1 || move < -0.1);
         animator.SetFloat("VerticalVelocity", rb2d.linearVelocity.y);
