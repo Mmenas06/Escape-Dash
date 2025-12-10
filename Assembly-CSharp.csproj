@@ -52,6 +52,7 @@
     <Compile Include="Assets\Scripts\LaserControl.cs" />
     <Compile Include="Assets\2D Dungeon Tilemap\SceneScripts\CameraFollow2D.cs" />
     <Compile Include="Assets\2D Dungeon Tilemap\CoinSystem\Scripts\CollectedCoin.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Bgfollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\2D Dungeon Tilemap\SceneScripts\PlayerMovement.cs" />
