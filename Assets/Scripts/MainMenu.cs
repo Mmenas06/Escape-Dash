@@ -1,30 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public GameObject mainMenu;
-    public GameObject optionsMenu;
-    public GameObject selectDifficulty;
     
-    public void OpenOptionsPanel()
-    {
-        mainMenu.SetActive(true);
-        optionsMenu.SetActive(false);
-        selectDifficulty.SetActive(false);
-    }
-
     public void OpenMainMenuPanel()
     {
         mainMenu.SetActive(true);
-        optionsMenu.SetActive(false);
-        selectDifficulty.SetActive(false);
     }
 
-    public void OpenSelectDifficulty()
+    public void PlayGame()
     {
-        selectDifficulty.SetActive(true);
-        mainMenu.SetActive(false);
-        optionsMenu.SetActive(false);
+        SceneManager.LoadScene("Level1");
     }
 
     public void QuitGame()
