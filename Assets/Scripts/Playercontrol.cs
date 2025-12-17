@@ -21,12 +21,16 @@ public class Playercontrol : MonoBehaviour
     private Animator animator;
     private int coins;
     public TMP_Text textCoins;
+    public GameObject endMenu;
+    private bool isEndMenu;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         jumpCounter = 0;
+        isEndMenu = false;
+        endMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,6 +60,16 @@ public class Playercontrol : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
+        if (isEndMenu)
+        {
+            endMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            endMenu.SetActive(false);
+            Time.timeScale = 1.0f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -70,6 +84,11 @@ public class Playercontrol : MonoBehaviour
         if (collision.gameObject.CompareTag("Spikes"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            isEndMenu = true;
         }
     }
 }
