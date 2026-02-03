@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ce2768b-abb2-486b-b403-0d31168b99ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-Dash/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Playercontrol.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
@@ -126,6 +124,8 @@
       <workItem from="1765460484320" duration="1110000" />
       <workItem from="1765792728296" duration="1983000" />
       <workItem from="1765960022607" duration="1989000" />
+      <workItem from="1769675636581" duration="3295000" />
+      <workItem from="1770107015293" duration="3352000" />
     </task>
     <servers />
   </component>
